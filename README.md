@@ -22,5 +22,6 @@ Hi <<<firstname>>> <<<lastname>>>,
 Best,
 Joe User
 ```
+
 6. Hit the ‘send’ button and you’ve just sent a mass email ‘personally’ through the Googol Mails app!
 
