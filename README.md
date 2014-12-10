@@ -17,11 +17,10 @@ Step-by-step use of the application:
 4. After creating a list(s), compose an email and select the list you would like to use for that email from a dropdown of the lists you have created.
 5. Compose the message using inputs within <<< >>> tags to indicate where the input should be substituted. 
 	```
-	/* Hi <<<firstname>>> <<<lastname>>>,
-	 * I would like to personally invite you to my birthday party this weekend. Hope you can make it!
-	 * Best,
-	 * Joe User
-	 */ 
+	Hi <<<firstname>>> <<<lastname>>>,
+		I would like to personally invite you to my birthday party this weekend. Hope you can make it!
+	Best,
+	Joe User
 	```
 6. Hit the ‘send’ button and you’ve just sent a mass email ‘personally’ through the Googol Mails app!
 
