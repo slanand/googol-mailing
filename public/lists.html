@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>Googol Mailing</title>
+	</head>
+
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src= 'js/buttonForm.js'></script>
+
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      	<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="home.html">Googol Mailing</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="home.html">Home</a></li>
+		        <li><a href="email.html">Compose Email</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Lists <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="lists.html">View Lists</a></li>
+		            <li><a href="editlists.html">Create/add to list</a></li>
+		          </ul>
+		        </li>
+		        <li id="logout"><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	    <div id='wrapper' class= "col-md-4">
+			<!-- display user's lists -->
+			<h3>Your Lists:</h3> 
+			<div id="lists">
+			</div>
+		</div>
+		<!-- update form -->
+		<div id= "updateDiv" class="col-md-3">
+			<span id="update"></span>
+			<h4> Update a contact: </h4>
+			<form id='postForm' role="form">
+				<div class="row">
+					<div class="form-group">
+					    <label for="listname">List</label>
+					    <input type="text" class="form-control listName" id="listname" name="list" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+					    <label for="currEmail">Current Email</label>
+					    <input type="email" class="form-control currEmail" id="currEmail" name="currEmail" required>
+					</div>
+				</div>
+				<p><em>Update to:</em></p>
+				<div class="row">
+					<div class="form-group">
+					    <label for="firstname">First Name</label>
+					    <input type="text" class="form-control fname" id="firstname" name="first" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+					    <label for="lastname">Last Name</label>
+					    <input type="text" class="form-control lname" id="lastname" name="last" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+					    <label for="email">Email</label>
+					    <input type="email" class="form-control email" id="email" name="last" required>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-default">Update this contact</button> 
+			</form>
+
+		<!-- placeholder div -->
+		</div>
+		<div class= "col-md-1">
+		</div>
+
+		<!-- delete form -->
+		<div id= "deleteDiv" class= "col-md-3">
+			<span id="delete"></span>
+			<h4> Delete a contact: </h4>
+			<form id='deleteForm' role= "form">
+				<div class="row">
+					<div class="form-group">
+					    <label for="listname">List</label>
+					    <input type="text" class="form-control listName" id="listname" name="list" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+					    <label for="email">Email</label>
+					    <input type="text" class="form-control email" id="email" name="last" required>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-default">Delete this contact</button> 
+			</form>
+		</div>
+	</body>
+</html>
+

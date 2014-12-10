@@ -1,0 +1,30 @@
+<div class="row">
+	  <div class="form-group">
+    <label for="toList">* List:</label>
+	  <!-- iterate through collection names  -->
+		<% if (lists.length) { %>
+		    <select id = "toList" class="form-control" required>
+				<% for (var i = 0; i < lists.length; i++) { %>
+					<option value= <%= lists[i] %>> <%= lists[i] %> </option> 
+				<% } %>
+			</select>
+		<% } else { %>
+		    <h5>You don't have any lists, make one before sending emails!</h5>
+		<% } %>
+</div>
+</div>
+<div class="row">
+	<div class="form-group">
+    <label for="subjectTitle">* Subject</label>
+    <input type="text" class="form-control" id="subjectTitle" name="subject" placeholder="M2C Final Project Testing" required>
+</div>
+</div>
+<div class="row">
+	<div class="form-group">
+    <label for="body">* Message</label>
+    <textarea class="form-control" rows="3" id="body"></textarea>
+</div>
+</div>
+<button type="submit" class="btn btn-default">Send Email</button>
+
+

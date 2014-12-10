@@ -1,0 +1,13 @@
+<!-- iterate through collection names  -->
+<% if (lists.length) { %>
+	<% for (var i = 0; i < lists.length; i++) { %>
+		<div id=<%= lists[i] %>> 
+			<h4><%= lists[i] %></h4>
+			<button class="btn btn-default btn-sm specificList">View contacts</button>
+			<br><br>
+			<span class="contacts"></span>
+		</div>
+	<% } %>
+<% } else { %>
+    <h2>You don't have any lists!</h2>
+<% } %>

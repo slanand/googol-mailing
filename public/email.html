@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>Googol Mailing</title>
+	</head>
+
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src= 'js/buttonForm.js'></script>
+
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      	<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="home.html">Googol Mailing</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="home.html">Home</a></li>
+		        <li class="active"><a href="email.html">Compose Email</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Lists <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="lists.html">View Lists</li>
+		            <li><a href="editlists.html">Create/add to list</a></li>
+		          </ul>
+		        </li>
+		        <li id="logout"><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	    <div id='wrapper'>
+	    	<!-- email form -->
+	    	<div id="emailform" class="col-md-6">
+	    		<span id="alert"></span>
+		    	<h4>Get Started:</h4>
+		    	<ol>
+					<li>Choose the list of people you would like to send your email to</li>
+					<li>Put in the firstname / lastname parameters within your message in these tags <<<>>> </li>
+					<li>Hit the 'send' button to send them!</li>
+				</ol>
+				<br>
+			    <form role="form" id="postEmailForm">
+			   	</form>
+			</div>
+
+			<div id="emailform" class="col-md-1">
+			</div>
+		</div>
+	</body>
+</html>

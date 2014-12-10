@@ -1,0 +1,10 @@
+<!-- iterate through collection names  -->
+<% if (contactList.length) { %>
+	<ul>
+	<% for (var i = 0; i < contactList.length; i++) { %>
+		<li><%= contactList[i].firstname %> <%= contactList[i].lastname %> - <%= contactList[i].email %></li>
+	<% } %>
+	</ul>
+<% } else { %>
+    <h4>There are no contacts in this list!</h4>
+<% } %>
