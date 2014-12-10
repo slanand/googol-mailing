@@ -10,7 +10,7 @@ I used the [Nodemailer](https://www.npmjs.com/package/nodemailer) npm module to 
 
 ## Usage
 Step-by-step use of the application:
-- 'npm install' dependencies
+- `npm install` dependencies
 - Log on to Googol Mailing using username (joeuser) and password (m2c123)
 - Create lists of people you would like to send emails to; a list consists of a person’s first name, last name, and email address. 
 - After creating a list(s), compose an email and select the list you would like to use for that email from a dropdown of the lists you have created.
