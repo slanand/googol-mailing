@@ -6,7 +6,7 @@ Final Project for 67-328 Mobile to Cloud: Building Distributed Applications (Car
 Googol Mailing provides users with an intuitive user interface that enables them to send personalized messages to several people. Mail Merge for Gmail allows people to send personalized mass emails but setting up the inputs and list of people needs to be done through an Excel spreadsheet or Google sheet, which can be troublesome and/or time-consuming. 
 
 ## Setup
-I used the [Nodemailer](https://www.npmjs.com/package/nodemailer) npm module to send emails through this application. Nodemailer requires that the email and ‘application-specific password’ be hard coded into the code of the application in order to be authorized to send emails from a user’s Gmail account. I created a fake Gmail account, m2cgoogol@gmail.com, under the name Joe User, enabled 2-step authentication for the account and acquired the application-specific password to use and demonstrate this application. 
+I used the [Nodemailer](https://www.npmjs.com/package/nodemailer) npm module to send emails through this application. Nodemailer requires that the email and ‘application-specific password’ be hard coded into the code of the application ('mailer.js') in order to be authorized to send emails from a user’s Gmail account. I created a fake Gmail account, m2cgoogol@gmail.com, under the name Joe User, enabled 2-step authentication for the account and acquired the application-specific password to use and demonstrate this application. Replace this fake account with your personal email and application specific password to use the application.
 
 ## Usage
 Step-by-step use of the application:
