@@ -1,6 +1,8 @@
 Googol Mailing
 =============
 
+Final Project for 67-328 Mobile to Cloud: Building Distributed Applications (Carnegie Mellon University)
+
 Googol Mailing provides users with an intuitive user interface that enables them to send personalized messages to several people. Mail Merge for Gmail allows people to send personalized mass emails but setting up the inputs and list of people needs to be done through an Excel spreadsheet or Google sheet, which can be troublesome and/or time-consuming. 
 
 ## Setup
